@@ -1,0 +1,38 @@
+* {
+    font-family: system-ui;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    height: 100vh;
+}
+
+header, footer {
+    background-color: lightskyblue;
+    grid-column: 1 / 4;
+    padding: 2rem;
+}
+
+aside {
+    background-color: mediumpurple;
+    padding: 1rem;
+}
+
+aside:first-of-type {
+    grid-column: 1 / 2;
+}
+
+main {
+    background-color: coral;
+    grid-column: 2 / 3;
+    padding: 1rem;
+}
+
+aside:last-of-type {
+    grid-column: 3 / 4;
+}
